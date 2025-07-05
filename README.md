@@ -17,6 +17,8 @@ A Python-based automation project using **Playwright** to streamline generating 
 
 ### 📸 Photo Metadata Integration  
 - Extracts metadata from photos using Adobe Stock API.
+  
+### Currently Very Messy
 
 ---
 
