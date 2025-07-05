@@ -33,7 +33,7 @@ class CreatingPrompts:
             self.prompt_start = f"/imagine prompt: stock photography, professional shot, natural lighting,{self.prompt_edit1} "
             # self.prompt_start = f"/imagine prompt: stock photography, natural lighting,{self.prompt_edit1} "
         elif self.image_type == 2 and self.pixel == 0 and threed == False:
-            self.prompt_start = f"/imagine prompt: digital made, simple,{self.prompt_edit1} "
+            self.prompt_start = f"/imagine prompt: digital illustration, {self.prompt_edit1}, clean design, concept art, modern aesthetic, flat colors, artstation trending, "
         elif self.image_type == 2 and self.pixel == 0 and threed == True:
             self.prompt_start = f"/imagine prompt: 3D render, minimalist, simple,{self.prompt_edit1} "
         elif self.image_type == 2 and self.pixel == 1:
@@ -54,7 +54,7 @@ class CreatingPrompts:
                     continue
                 if key_init not in key_list:
                     key_list.append(key_init)
-            self.prompt_list.append(f"{self.prompt_start}{title_final}, {key_list[0]}{self.add_text_to_image} --ar 3:2{self.prompt_edit} --s 200 --c 20")
+            self.prompt_list.append(f"{self.prompt_start}{title_final}, {key_list[0]}{self.add_text_to_image} --ar 3:2{self.prompt_edit} --s 250")
         # print(self.prompt_list)
         # print(len(self.prompt_list))
         return self.prompt_list

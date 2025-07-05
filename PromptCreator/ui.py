@@ -13,7 +13,7 @@ THEME_1 = "#35374B"
 THEME_2 = "#344955"
 THEME_3 = "#50727B"
 THEME_4 = "#78A083"
-TIMEOUT_BETWEEN_12_PROMPTS = 960000
+TIMEOUT_BETWEEN_12_PROMPTS = 200000
 FONT = "white"
 
 
@@ -289,9 +289,9 @@ class Ui:
                                                )
                 await midj_tab.goto("https://discord.com/channels/@me/1046140247618109500")
                 await midj_tab.wait_for_timeout(4453)
-                await midj_tab.locator("#uid_7").fill(os.environ["DISC_MAIL"])
+                await midj_tab.locator("#uid_32").fill(os.environ["DISC_MAIL"])
                 await midj_tab.wait_for_timeout(4230)
-                await midj_tab.locator("#uid_9").fill(password)
+                await midj_tab.locator("#uid_34").fill(password)
                 await midj_tab.get_by_role("button", name="Log In").click()
                 await midj_tab.goto("https://discord.com/channels/@me/1046140247618109500")
 
